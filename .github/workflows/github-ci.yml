@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Instalar Chrome
         run: |
@@ -18,4 +18,6 @@ jobs:
           sudo apt install ./google-chrome-stable_current_amd64.deb
 
       - name: NPM Install
-        run: npm install && npm run cy:run
+        run: | 
+          npm install 
+          npm run cy:run
