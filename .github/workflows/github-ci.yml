@@ -3,7 +3,9 @@ image: docker.io/cypress/browsers
 name: Cypress Test
 
 on:
-  push: main
+  push: 
+    branches:
+      main
 
 stages:
   - build
