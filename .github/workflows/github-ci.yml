@@ -18,7 +18,4 @@ jobs:
           sudo apt install ./google-chrome-stable_current_amd64.deb
 
       - name: NPM Install
-        run: npm install
-
-      - name: Cypress Headless
-        run: npm run cy:run
+        run: npm install && npm run cy:run
