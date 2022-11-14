@@ -3,7 +3,7 @@ image: docker.io/cypress/browsers
 name: Cypress Test
 
 on:
-  commit
+  push: main
 
 stages:
   - build
