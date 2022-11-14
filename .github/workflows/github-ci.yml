@@ -10,8 +10,11 @@ on:
 stages:
   - build
 
-build-job:
-  stage: build
-  script:
-    - npm install
-    - npm run cy:run
+
+jobs:
+  build-job:
+    steps:
+      stage: build
+      script:
+        - npm install
+        - npm run cy:run
