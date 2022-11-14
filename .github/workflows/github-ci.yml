@@ -10,6 +10,6 @@ on:
 jobs:
   build-job:
     steps:
-      run:
-        - npm install
-        - npm run cy:run
+      run: |
+        npm install
+        npm run cy:run
