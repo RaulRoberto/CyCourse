@@ -1,7 +1,9 @@
 {
   "scripts":{
     "cy:open": "cypress open",
-    "cy:run": "cypress run --browser chrome"
+    "cy:run": "cypress run --browser chrome",
+    "cy:run2" : "cypress run --browser default"
+
   },
   "devDependencies": {
     "cypress": "^3.6.0"
